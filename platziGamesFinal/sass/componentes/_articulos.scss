@@ -1,0 +1,79 @@
+.articulos {
+	width: 50%;
+	padding: 5rem 0 0 10rem;
+	@media (max-width:1268px) {
+		width: 100%	;
+		padding: 5rem 0 0 0;
+	}
+}
+
+.articulo {
+	width: 75%;
+	margin-bottom: 6rem;
+	border-bottom: .3rem solid $color-secundario;
+	&__categoria {
+		font-weight: 500;
+		font-size: 1.6rem;
+		color: $color-secundario;
+		@include titulos($Fuente2);
+	}
+	&__titulo {
+		margin: .5rem 0 .8rem;
+		font-size: 2rem;
+		color: $color-primario;
+		@include titulos($Fuente2);
+	}
+	&__descripcion {
+		font-size: 1.6rem;
+		line-height: 2.4rem;
+		margin-bottom: 2rem;
+		padding-right: 10rem;
+	}
+	@media (max-width:1268px) {
+		max-width: 60rem;
+		width: 90%;
+		margin: 0 auto 6rem;
+		&__categoria {
+			font-weight: 500;
+			font-size: 1.6rem;
+			color: $color-secundario;
+			@include titulos($Fuente2);
+		}
+		&__titulo {
+			margin: .5rem 0 .8rem;
+			font-size: 2rem;
+			color: $color-primario;
+			@include titulos($Fuente2);
+		}
+		&__descripcion {
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			margin-bottom: 2rem;
+			padding-right: 10rem;
+		}
+	}
+}
+
+.articulo--principal {
+	max-width: 66rem;
+	margin: 0 auto;
+	line-height: 2.8rem;
+	&__intro {
+		@include fuente(2.5rem);
+	}	
+	p {
+		margin: 1.8rem 0;
+	}
+	h3 {
+		color: $color-secundario;
+	}
+	h2 {
+		margin: 4rem 0;	
+		text-align: center;
+		@include fuente(5rem);
+	}	
+	@include media(mobile-only) {
+		width: 90%;
+		margin: 0 auto;
+	}
+}

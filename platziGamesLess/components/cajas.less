@@ -1,0 +1,30 @@
+.contenedor--cajas {
+  width: 130rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.caja {
+  max-width: 38rem;
+  .sombra-caja();
+  &__imagen {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__contenido {
+    padding: 2.5rem;
+    background-color: @color-claro;
+    span {
+      color: @color-secundario;
+      .Oswald();
+    }
+    a {
+      color: @color-variacion;
+      .Oswald();
+    }
+  }
+}

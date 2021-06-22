@@ -1,0 +1,64 @@
+main {
+	@media (max-width:1268px) {
+		flex-direction: column;
+	}
+}
+.perfil {
+	width: 50%;
+	padding-top: 5rem;
+	color: $color-claro;
+	background-color: $color-secundario;
+	&__avatar {
+		display: block;
+		margin: 0 auto;
+		border-radius: 2rem;
+	}
+	&__nombre {
+		margin: 0.5rem 0;
+		text-align: center;
+		font-size: 2.5rem;
+		@include titulos($Fuente2);
+	}
+	&__titulo {
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		font-size: 1.3rem;
+		letter-spacing: 0.01rem;
+		color: get-opacity($color-claro, .5);
+	}
+	//2 agregar aca
+	&__boton {
+		display: block;
+		width: 8rem;
+		height: 3rem;
+		margin: 2rem auto 2rem;
+		border-radius: 2rem;
+		text-align: center;
+		font-size: 1.5rem;
+    letter-spacing: .05rem;
+		color: $color-claro;
+		background-color: get-opacity($color-primario, .2);
+		border: .2rem solid get-opacity($color-claro, .9);
+		@include titulos($Fuente2);
+		font-weight: 400;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	@media (max-width:1268px) {
+		width: 100%;
+	}
+}
+
+.perfil__minibio {
+	margin: 1rem auto;
+	padding-top: 2rem;
+	h2 {
+		@extend .perfil__nombre;
+	}
+	h3 {
+		@extend .perfil__titulo;
+	}
+}

@@ -1,0 +1,58 @@
+.intro {
+  position: relative;
+  width: 130rem;
+  height: 64.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  .sombra-caja();
+  background-color: @color-claro;
+  &__imagen {
+    width: 128rem;
+    position: absolute;
+    img {
+      width: 100%;
+      height: 62.4rem;
+      object-fit: cover;
+    }
+  }
+  &__contenido {
+    position: absolute;
+    top: 15.6rem;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: @color-claro;
+  }
+  &__categoria {
+    .Oswald();
+    color: fade(@color-claro, 50%);
+  }
+  &__titulo {
+    font-family: @Fuente2;
+    .fuente(5rem);  
+  }
+  &__autor {
+    position: absolute;
+    top: 40rem;
+    left: 0;
+    right: 0;
+    width: 15rem;
+    margin: 0 auto;
+    color: @color-claro;
+    img {
+      width: 6rem;
+      height: 5rem;
+      float: left;
+      padding-right: 1rem;
+      border-radius: 50%;
+    }
+    span {
+      display: inline-block;
+    }
+    &-titulo {
+      color: fade(@color-claro, 50%);
+    }
+  }
+}

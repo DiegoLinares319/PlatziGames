@@ -1,0 +1,32 @@
+.ubicacion--perfil {
+	max-width: 36rem;
+	width: 50%;
+	height: 9rem;
+	margin: 3rem auto 4rem;
+	padding: 2.1rem 0 0 3rem;
+	border-radius: 2rem;
+	background-color: $color-claro;
+	@include caja;
+	i {
+		display: block;
+		float: left;
+		padding: 0.6rem 1.5rem 0 0;
+		font-size: 3.3rem;
+		color: $color-variacion;
+	}
+	h2 {
+		font-weight: 600;
+		font-size: 2rem;
+		@include titulos($Fuente2);
+	}
+	h3 {
+		font-size: 1.2rem;
+			//1 agregar aca
+
+		color: get-opacity($color-primario, .5);
+		@include titulos($Fuente2);
+	}
+	@media (max-width:1268px) {
+		width: 80%;
+	}
+}

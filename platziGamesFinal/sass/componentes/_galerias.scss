@@ -1,0 +1,41 @@
+.galeria {
+	max-width: 40.619rem;
+	width: 56%;
+	height: 25rem;
+	margin: 1rem auto 5rem;
+	padding: 2rem .5rem 0 2.5rem;
+	justify-content: space-evenly;
+	border-radius: 2rem;
+	background-color: $color-claro;
+	@include caja;
+	&__foto-principal {
+		float: left;
+		margin-right: 1rem;
+	}
+	&__fotos-adicionales img {
+		height: 7rem;
+		margin-right: .5rem;
+		margin-bottom: .5rem;
+	}
+	h2 {
+		margin-bottom: 1rem;
+		font-weight: 600;
+		font-size: 2rem;	
+		// incluir aca
+		@include titulos($Fuente2);
+	}		
+	img {
+		border-radius: 1rem;
+	}
+	@media (max-width:1268px) {
+		width: 92%;
+		height: auto;
+		padding-bottom: 1rem;
+		&__foto-principal {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+
+	

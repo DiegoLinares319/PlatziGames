@@ -1,0 +1,48 @@
+.encabezado--con-filtros {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	padding: 3rem 0;
+	h2 {
+		display: inline-block;
+		margin-top: 1rem;
+		font-size: 3rem;
+		@include titulos($Fuente2);
+	}
+	.filtros {
+		max-width: 25rem;
+		width: 80%;
+		height: auto;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		border-radius: 1.3rem;
+		@include caja;
+	}
+	span {
+		display: inline-block;
+		margin-right: 1rem; 
+		@include titulos($Fuente2);
+	}
+	a {
+		margin: 0 .75rem;
+		color: #ccc;
+		font-size: 2rem;
+	}
+	@include media(mobile-only) {
+		h2 {
+			font-size: 1.8rem;
+			@include titulos($Fuente2);
+			@media (min-width:660px) and (max-width:768px) {
+				font-size: 3rem;
+			}
+		}
+		.filtros {
+			
+			@include caja;
+		}
+		span {
+			font-size: 1.8rem;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.estadistica--perfil {
+  display: flex;
+  width: 50%;
+  height: 9rem;
+  padding-top: 1.7rem;
+  margin: 0 auto;
+  justify-content: space-around;
+  @include caja;
+  h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: $color-primario;
+    @include titulos($Fuente2);
+  }
+  span {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    color: get-opacity($color-primario, 0.60);
+    @include titulos($Fuente2);
+  }
+}

@@ -1,0 +1,29 @@
+.banner--homepage {
+  max-width: 31rem;
+  height: 100%;
+  padding: 5.5rem;
+  padding-top: 5.5rem;
+  background-color: $color-secundario;
+  color: $color-claro;
+  border-radius: 1rem;
+  align-self: center;
+  h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+    @include titulos($Fuente2);
+  }
+  p {
+    margin: 2rem 0 4rem;
+  }
+  .button {
+    padding: 1rem;
+    height: 5rem;
+    border: .2rem solid $color-claro;
+    border-radius: 1rem;
+    cursor: pointer;
+    @include titulos($Fuente2);
+  }
+  @media (min-width: 769px) and (max-width: 1201px) {
+    margin: 0 auto;
+  }
+}
